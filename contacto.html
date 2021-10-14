@@ -29,28 +29,27 @@
             <legend>Contacto</legend>
             <div>
                 <label for="nombre">Nombre</label>
-                <input type="text" placeholder="Tú Nombre" autofocus required pattern="[A-Za-z0-9]{3,30}">
+                <input type="text" id="nombre" placeholder="Tú Nombre" autofocus required pattern="[A-Za-z0-9]{3,30}">
             </div>
             <div>
                 <label for="email">Email</label>
-                <input type="email" placeholder="Tú email" required>
+                <input type="email" id="email" placeholder="Tú email" required>
             </div>
             <div>
                 <label for="edad">Edad</label>
-                <input type="number" min="18" max="99" placeholder="Tú edad" required>
-                <!-- pattern="([1]{1}[8]{1})"   No supe hacer lo con pattern -->
+                <input type="number" id="edad" min="18" max="99" placeholder="Tú edad" required>
             </div>
             <div>
                 <label for="telefono">Teléfono</label>
-                <input type="tel" placeholder="Tú teléfono" required>
+                <input type="tel" id="telefono" placeholder="Tú teléfono" required>
             </div>
             <div>
                 <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" required placeholder="Escribe el mensaje" cols="30" rows="10"></textarea>
+                <textarea name="mensaje" id="mensaje" required placeholder="Escribe el mensaje" cols="30" rows="10"></textarea>
             </div>
             <div>
                 <label for="check">Acepto la política de privacidad y cookies.</label>
-                <input type="checkbox" required>
+                <input type="checkbox" id="check" required>
             </div>
             <div>
                 <input type="submit" value="Enviar">
