@@ -1,3 +1,22 @@
-table, th, td {
-    border:1px solid black;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --rojoOscuro: #af161e;
+    --rojo: #c8091b;
+    --gris: #43565a;
+    --naranja: #ea3e10;
+    --negro: #000000;
+    --blanco: #FFFFFF;
+    --fuenteTitulos: 'Lato', sans-serif;
+    --funteParrafos: 'Roboto', sans-serif;
+}
+
+/*Globales*/
+html{
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
+* {
+    padding: 0rem;
+    margin: 0rem;
 }
