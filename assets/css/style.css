@@ -13,10 +13,71 @@
 
 /*Globales*/
 html{
-    font-size: 62.5%; /*1rem = 10px*/
+    font-size: 6.25%; /*1rem = 10px*/
+    box-sizing: border-box;
+    max-width: 1200rem;
+    width: 90%;
+    margin: 0 auto;
 }
 
 * {
     padding: 0rem;
     margin: 0rem;
+}
+
+body{
+    font-family: var(--funteParrafos);
+
+}
+
+h1,h2,h3,h4{
+    font-family: var(--fuenteTitulos);
+}
+
+h1{
+    font-size: 38rem;
+}
+
+h2{
+    font-size: 28rem;
+}
+
+h3{
+    font-size: 18rem;
+}
+
+h4{
+    font-size: 10rem;
+}
+
+p{
+    font-size: 15rem;
+}
+
+a{
+    font-size: 15rem;
+    text-decoration: none;
+    gap: 5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12rem;
+}
+
+.navegacion__enlace{
+    text-align: center;
+    gap: 12rem;
+}
+
+table, tr, td{
+    font-size: 15rem;
+}
+
+
+.redes-logo{
+    width: 40rem;
+    height: 40rem;
 }
