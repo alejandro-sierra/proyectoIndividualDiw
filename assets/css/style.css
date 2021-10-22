@@ -3,7 +3,7 @@
 :root{
     --rojoOscuro: #af161e;
     --rojo: #c8091b;
-    --gris: #43565a;
+    --gris: #879092;
     --naranja: #ea3e10;
     --negro: #000000;
     --blanco: #FFFFFF;
@@ -11,14 +11,14 @@
     --funteParrafos: 'Roboto', sans-serif;
 }
 
-/*Globales*/
+/* Globales */
 html{
     font-size: 6.25%; /*1rem = 1px*/
     box-sizing: border-box;
-    max-width: 1200rem;
-    width: 90%;
-    margin: 0 auto;
+    background-color: var(--gris);
 }
+
+
 
 * {
     padding: 0rem;
@@ -35,19 +35,19 @@ h1,h2,h3,h4{
 }
 
 h1{
-    font-size: 38rem;
+    font-size: 48rem;
 }
 
 h2{
-    font-size: 28rem;
+    font-size: 38rem;
 }
 
 h3{
-    font-size: 18rem;
+    font-size: 28rem;
 }
 
 h4{
-    font-size: 10rem;
+    font-size: 12rem;
 }
 
 p{
@@ -55,21 +55,71 @@ p{
 }
 
 a{
-    font-size: 15rem;
-    padding: 2rem;
+    font-size: 18rem;
+    padding: 5rem;
     text-decoration: none;
 }
 
+.contenedor__centrado{
+    max-width: 1400rem;
+    width: 90%;
+    margin: 0 auto;
+}
+ 
+/* Header */
 .header {                                               
-    align-items: center;
+    background: url("../img/all_tools_red_out-focus.webp") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 450rem;
+    /* position: relative; */
+}
+
+.header__texto{
+    color: var(--blanco);
+    text-align: center;
+    position: absolute;
+    top: 225rem;
+    right: 34%;
 }
 
 .navegacion{
     float: right;
+    margin-top: 25rem;
 }
 
+.navegacion__enlace{
+    color: var(--blanco);
+}
 
+.logo{
+    float: left;
+    margin-top: 2rem;
+    color: var(--blanco);
+}
 
+.logo__nombre{
+    font-weight: normal;
+}
+
+.logo__bold{
+    font-weight: bold;
+}
+
+/* Servicios */
+.servicios{
+    background-color: var(--blanco);
+    padding: 25rem;
+    border-radius: 20rem;
+    margin-top: -25rem;
+    box-shadow: 0px 0px 23px 2px rgba(0,0,0,0.81);
+}
+
+.servicios__titulo{
+    text-align: center;
+}
+
+/* Proyectos */
 table, tr, td{
     font-size: 15rem;
 }
@@ -78,4 +128,17 @@ table, tr, td{
 .redes-logo{
     width: 40rem;
     height: 40rem;
+}
+
+
+/* Footer */
+footer{
+    color: var(--blanco);
+    background-color: var(--negro);
+    position: relative;
+    bottom: auto;
+}
+
+.footer p {
+    text-align: center;
 }

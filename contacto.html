@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Esta es la página de contacto de la web Alex Construction, en el caso de que necesite ayuda y tenga alguna duda relevante con cualquiera de nuestros servicios, contáctenos.">
+    <meta name="description"
+        content="Esta es la página de contacto de la web Alex Construction, en el caso de que necesite ayuda y tenga alguna duda relevante con cualquiera de nuestros servicios, contáctenos.">
     <link rel="shortcut icon" type="image/svg" href="assets/img/favicon.svg">
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -13,38 +14,45 @@
 </head>
 
 <body>
-    <header>
-        <!-- Puede ser que el area hero acabe aquí -->
-        <h1>Alex <span>Construction</span></h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="contacto.html">Contacto</a>
-            <a href="blog.html">Blog</a>
-        </nav>
+    <header class="header">
+        <div class="contenedor__centrado">
+            <a class="logo" href="index.html">
+                <h1 class="logo__nombre">Alex<span class="logo__bold">Construction</span></h1>
+            </a>
+            <nav class="navegacion">
+                <a class="navegacion__enlace" href="index.html">Inicio</a>
+                <a class="navegacion__enlace" href="proyectos.html">Proyectos</a>
+                <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                <a class="navegacion__enlace" href="blog.html">Blog</a>
+            </nav>
+        </div>
+        <div class="header__texto">
+            <h2>Bienvenido a Alex Constrution</h2>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
     </header>
     <main>
-        <form>
-            <div>
+        <form class="formulario contenedor__centrado">
+            <div class="campo">
                 <input type="text" placeholder="Nombre" autofocus required pattern="[A-Za-z0-9]{3,30}">
             </div>
-            <div>
+            <div class="campo">
                 <input type="email" placeholder="Email" required>
             </div>
-            <div>
+            <div class="campo">
                 <input type="number" min="18" max="99" placeholder="Edad" required>
             </div>
-            <div>
+            <div class="campo">
                 <input type="tel" placeholder="Teléfono" required>
             </div>
-            <div>
+            <div class="campo">
                 <textarea name="mensaje" required placeholder="Escribe un mensaje" cols="30" rows="10"></textarea>
             </div>
-            <div>
-                <input type="checkbox" required>
-                <p>Acepto la política de privacookies.</p>
+            <div class="campo">
+                <input id="checkbox" type="checkbox" required>
+                <label for="checkbox">Acepto la política de privacookies.</label>
             </div>
-            <div>
+            <div class="campo">
                 <input type="submit" value="Enviar">
             </div>
         </form>
