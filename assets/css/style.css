@@ -27,7 +27,6 @@ html{
 
 body{
     font-family: var(--funteParrafos);
-
 }
 
 h1,h2,h3,h4{
@@ -136,7 +135,7 @@ footer{
     color: var(--blanco);
     background-color: var(--negro);
     position: relative;
-    bottom: auto;
+    bottom: 0rem;
 }
 
 .footer p {
