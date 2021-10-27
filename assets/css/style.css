@@ -19,7 +19,6 @@ html{
 }
 
 
-
 * {
     padding: 0rem;
     margin: 0rem;
@@ -55,7 +54,7 @@ p{
 
 a{
     font-size: 18rem;
-    padding: 5rem;
+    padding: 7rem;
     text-decoration: none;
 }
 
@@ -70,7 +69,7 @@ a{
     background: url("../img/all_tools_red_out-focus.webp") no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 450rem;
+    height: 450rem; 
     /* position: relative; */
 }
 
@@ -89,6 +88,7 @@ a{
 
 .navegacion__enlace{
     color: var(--blanco);
+    border: var(--blanco);
 }
 
 .logo{
@@ -121,12 +121,28 @@ a{
 /* Proyectos */
 table, tr, td{
     font-size: 15rem;
+    border-collapse: collapse;
 }
 
+
+tr:nth-child(2n+1){
+    background-color: var(--blanco);
+}
+tr:nth-child(2n){
+    background-color: var(--gris);
+}
+tr:first-child{
+    background-color: var(--naranja);
+}
 
 .redes-logo{
     width: 40rem;
     height: 40rem;
+}
+
+/* Contactos */
+.formulario{
+    max-width: 500rem;
 }
 
 
