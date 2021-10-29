@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
 
 :root{
     --rojoOscuro: #af161e;
@@ -7,7 +7,7 @@
     --naranja: #ea3e10;
     --negro: #000000;
     --blanco: #FFFFFF;
-    --fuenteTitulos: 'Lato', sans-serif;
+    --fuenteTitulos: 'Roboto Slab', sans-serif;
     --funteParrafos: 'Roboto', sans-serif;
 }
 
