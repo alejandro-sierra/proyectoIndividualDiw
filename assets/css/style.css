@@ -3,7 +3,7 @@
 :root{
     --rojoOscuro: #af161e;
     --rojo: #c8091b;
-    --gris: #879092;
+    --gris: #323437;
     --grisClaro: #d3d3d3;
     --naranja: #ea3e10;
     --negro: #000000;
@@ -13,16 +13,15 @@
 }
 
 /* Globales */
+* {
+    padding: 0rem;
+    margin: 0rem;
+}
+
 html{
     font-size: 6.25%; /*1rem = 1px*/
     box-sizing: border-box;
     background-color: var(--grisClaro);
-}
-
-
-* {
-    padding: 0rem;
-    margin: 0rem;
 }
 
 body{
@@ -34,7 +33,7 @@ h1,h2,h3,h4{
 }
 
 h1{
-    font-size: 48rem;
+    font-size: 25rem;
 }
 
 h2{
@@ -51,12 +50,7 @@ h4{
 
 p{
     font-size: 15rem;
-}
-
-a{
-    font-size: 15rem;
-    padding: 20rem;
-    text-decoration: none;
+    line-height: 18rem;
 }
 
 /* Utilidades */
@@ -67,38 +61,50 @@ a{
     margin: 0 auto;
 }
 
-/* Header */
-.header {                                               
+/* Header  Inicio */
+.header__inicio {                                               
     background: url("../img/all_tools_red_out-focus.webp") no-repeat;
-    background-position: center center;
+    background-position: top center;
     background-size: cover;
     height: 700rem; 
-    /* position: relative; */
 }
 
 .header__texto{
     color: var(--blanco);
     text-align: center;
     position: absolute;
-    top: 225rem;
-    right: 34%;
+    top: 250rem;
+    right: 30%;
 }
 
-.navegacion{
-    float: right;
-    margin-top: 25rem;
-    margin-right: 150rem;
+/* Header Blog */
+.header__blog{
+    background-color: var(--naranja);
+    height: 400rem;
 }
+
+/* Navegacion */
+/* .navegacion{
+    background-color: var(--blanco);
+    position: sticky;
+} */
 
 .navegacion__enlace{
+    margin-top: 35rem;
+    float: right;
     color: var(--blanco);
-    border: var(--blanco);
+    font-size: 15rem;
+    padding: 20rem;
+    text-decoration: none;
 }
+
 
 .logo{
     float: left;
     margin-top: 2rem;
     color: var(--blanco);
+    margin-top: 35rem;
+    text-decoration: none;
 }
 
 .logo__nombre{
@@ -115,7 +121,7 @@ a{
     padding: 25rem;
     border-radius: 5rem;
     margin-top: -70rem;
-    margin-bottom: 15rem;
+    /* margin-bottom: 15rem; */
     box-shadow: 0px 0px 23px 2px rgba(0,0,0,0.81);
 }
 
@@ -158,7 +164,7 @@ tr:first-child{
 /* Footer */
 footer{
     color: var(--blanco);
-    background-color: var(--negro);
+    background-color: var(--gris);
     position: relative;
     bottom: 0rem;
 }
