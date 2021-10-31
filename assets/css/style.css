@@ -4,6 +4,7 @@
     --rojoOscuro: #af161e;
     --rojo: #c8091b;
     --gris: #879092;
+    --grisClaro: #d3d3d3;
     --naranja: #ea3e10;
     --negro: #000000;
     --blanco: #FFFFFF;
@@ -15,7 +16,7 @@
 html{
     font-size: 6.25%; /*1rem = 1px*/
     box-sizing: border-box;
-    background-color: var(--gris);
+    background-color: var(--grisClaro);
 }
 
 
@@ -53,16 +54,16 @@ p{
 }
 
 a{
-    font-size: 18rem;
-    padding: 7rem;
+    font-size: 15rem;
+    padding: 20rem;
     text-decoration: none;
 }
 
 /* Utilidades */
 
 .contenedor__centrado{
-    max-width: 1400rem;
-    width: 90%;
+    max-width: 1500rem;
+    width: 93%;
     margin: 0 auto;
 }
 
@@ -71,7 +72,7 @@ a{
     background: url("../img/all_tools_red_out-focus.webp") no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 450rem; 
+    height: 700rem; 
     /* position: relative; */
 }
 
@@ -86,6 +87,7 @@ a{
 .navegacion{
     float: right;
     margin-top: 25rem;
+    margin-right: 150rem;
 }
 
 .navegacion__enlace{
@@ -111,8 +113,8 @@ a{
 .servicios{
     background-color: var(--blanco);
     padding: 25rem;
-    border-radius: 20rem;
-    margin-top: -25rem;
+    border-radius: 5rem;
+    margin-top: -70rem;
     margin-bottom: 15rem;
     box-shadow: 0px 0px 23px 2px rgba(0,0,0,0.81);
 }
