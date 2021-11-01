@@ -84,26 +84,30 @@ p{
 }
 
 /* Navegacion */
-/* .navegacion{
-    background-color: var(--blanco);
-    position: sticky;
-} */
+.navegacion{
+    background: var(--blanco);
+    width: 100%;
+    position: fixed;
+    opacity: 0.8;
+    transition: .3s ease;
+}
 
 .navegacion__enlace{
-    margin-top: 35rem;
     float: right;
-    color: var(--blanco);
+    margin-top: 20rem;
+    padding-left: 20rem;
+    color: var(--negro);
     font-size: 15rem;
-    padding: 20rem;
     text-decoration: none;
 }
 
 
 .logo{
     float: left;
-    margin-top: 2rem;
-    color: var(--blanco);
-    margin-top: 35rem;
+    margin-left: 50rem;
+    margin-bottom: 10rem;
+    color: var(--negro);
+    margin-top: 20rem;
     text-decoration: none;
 }
 
