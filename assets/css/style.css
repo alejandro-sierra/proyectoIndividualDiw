@@ -63,6 +63,8 @@ p{
 
 /* Header  Inicio */
 .header__inicio {                                               
+    /* background-color: #ea3e10;
+    width: 100%; */
     background: url("../img/all_tools_red_out-focus.webp") no-repeat;
     background-position: top center;
     background-size: cover;
@@ -84,19 +86,19 @@ p{
 }
 
 /* Navegacion */
-.navegacion{
+/* .navegacion{
     background: var(--blanco);
     width: 100%;
     position: fixed;
     opacity: 0.8;
     transition: .3s ease;
-}
+} */
 
 .navegacion__enlace{
     float: right;
     margin-top: 20rem;
     padding-left: 20rem;
-    color: var(--negro);
+    color: var(--blanco);
     font-size: 15rem;
     text-decoration: none;
 }
@@ -106,7 +108,7 @@ p{
     float: left;
     margin-left: 50rem;
     margin-bottom: 10rem;
-    color: var(--negro);
+    color: var(--blanco);
     margin-top: 20rem;
     text-decoration: none;
 }
