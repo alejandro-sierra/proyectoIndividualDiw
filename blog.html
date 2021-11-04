@@ -13,35 +13,34 @@
 </head>
 
 <body>
-    <header class="header__inicio">
-        <div>
+    <header class="header__blog">
+        <nav class="navegacion">
             <a class="logo" href="index.html">
                 <h1 class="logo__nombre">Alex<span class="logo__bold">Construction</span></h1>
             </a>
-            <nav class="navegacion">
+            <div class="navegacion__enlaces">
                 <a class="navegacion__enlace" href="index.html">Inicio</a>
                 <a class="navegacion__enlace" href="proyectos.html">Proyectos</a>
                 <a class="navegacion__enlace" href="contacto.html">Contacto</a>
                 <a class="navegacion__enlace" href="blog.html">Blog</a>
-            </nav>
+            </div>
+        </nav>
+        
+        <div class="header__texto">
+            <h2>Blog</h2>
         </div>
     </header>
-    <main class="contenedor__centrado">
-        <a href="#articulo1">Articulo 1</a>
-        <a href="#articulo2">Articulo 2</a>
-        <a href="#articulo3">Articulo 3</a>
-        <a href="#articulo4">Articulo 4</a>
-        <a href="#barralateral1">Barra Lateral</a>
+
+    <main class="contenedor__centrado contenedor__sombras">
+        <div class="redirecciones__enlaces">
+            <a href="#tabla">Tabla</a>
+            <a href="#mapa">Mapa</a>
+            <a href="#youtube">YouTube</a>
+            <a href="#barralateral1">Barra Lateral</a>
+        </div>
         <section>
             <article>
-                <a name="articulo1"></a>
-                <h2>Articulo 1</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi sit molestias eligendi? Iste
-                    necessitatibus maiores eos nemo dolorem quod, nam distinctio ex! Asperiores odit necessitatibus
-                    harum ipsa veritatis sint?</p>
-            </article>
-            <article>
-                <a name="Actividad 8"></a>
+                <a name="tabla"></a>
                 <h2>Tabla</h2>
                 <table class="contenedor__centrado table">
                     <thead>
@@ -80,27 +79,26 @@
                 </table>
             </article>
             <article>
-                <a name="articulo3"></a>
-                <h2>lorem ipsum</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi sit molestias eligendi? Iste
-                    necessitatibus maiores eos nemo dolorem quod, nam distinctio ex! Asperiores odit necessitatibus
-                    harum ipsa veritatis sint?</p>
+                <a name="mapa"></a>
+                <h2>Mapa</h2>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.710640813319!2d-3.686688184621157!3d40.41526057936537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289ff511827b%3A0x9e6c2716b524a3ae!2sParque%20de%20El%20Retiro!5e0!3m2!1ses!2ses!4v1633859277497!5m2!1ses!2ses"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </article>
             <article>
-                <a name="articulo4"></a>
-                <h2>lorem ipsum</h2>
+                <a name="youtube"></a>
+                <h2>Video YouTube</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2TQePBCrq8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nisi sit molestias eligendi? Iste
-                    necessitatibus maiores eos nemo dolorem quod, nam distinctio ex! Asperiores odit necessitatibus
+                    necessitatibus maiores eos nemo dolorem quod, Laboriosam nisi sit molestias eligendi? Iste
+                    necessitatibus maiores eos nemo dolorem quodLaboriosam nisi sit molestias eligendi? Iste
+                    necessitatibus maiores eos nemo dolorem quod nam distinctio ex! Asperiores odit necessitatibus
                     harum ipsa veritatis sint?</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2TQePBCrq8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </article>
             <article>
-                <a name="articulo5"></a>
+                <a name="copdepen"></a>
                 <h2>CodePen</h2>
-                <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="YzzNGeR" data-user="JavaScriptJunkie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                <p class="codepen" data-height="450" data-default-tab="html,result" data-slug-hash="YzzNGeR" data-preview="true" data-user="JavaScriptJunkie" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
                     <span>See the Pen <a href="https://codepen.io/JavaScriptJunkie/pen/YzzNGeR">
                     Credit Card Form - VueJs</a> by Muhammed Erdem (<a href="https://codepen.io/JavaScriptJunkie">@JavaScriptJunkie</a>)
                     on <a href="https://codepen.io">CodePen</a>.</span>
@@ -115,19 +113,28 @@
                 officia pariatur aspernatur, vitae dicta unde quos error fugit velit facilis consequuntur necessitatibus
                 accusamus esse?</p>
         </aside>
-        <a href="#articulo1">Primer Articulo</a>
+        <a class="redirecciones__enlaces" href="#tabla">Primer Articulo</a>
     </main>
-    <footer>
-        <h4>Redes Sociales</h4>
-        <a href="https://es-es.facebook.com/">
-            <img class="redes-logo" src="assets/img/facebook.png" alt="logo-facebook"></a>
-        <a href="https://www.instagram.com/">
-            <img class="redes-logo" src="assets/img/instagram.png" alt="logo-instagram"></a>
-        <a href="https://es.linkedin.com/">
-            <img class="redes-logo" src="assets/img/linkedin.png" alt="logo-linkedin"></a>
-        <a href="https://wa.me/34634420269">
-            <img class="redes-logo" src="assets/img/whatsapp.png" alt="logo-whatsapp"></a>
-        <p>Derechos reservados al diseñador y desarrollador.</p>
+    <footer class="contenedor__centrado">
+        <div class="footer__contenido">
+            <div class="footer__enlaces">
+                <a href="#">Mapa del sitio</a>
+                <a href="blog.html">Blog</a>
+            </div>
+            <div class="footer__redes">
+                <a href="https://es-es.facebook.com/">
+                    <img class="redes-logo" src="assets/img/facebook.png" alt="logo-facebook"></a>
+                <a href="https://www.instagram.com/">
+                    <img class="redes-logo" src="assets/img/instagram.png" alt="logo-instagram"></a>
+                <a href="https://es.linkedin.com/">
+                    <img class="redes-logo" src="assets/img/linkedin.png" alt="logo-linkedin"></a>
+                <a href="https://wa.me/34634420269">
+                    <img class="redes-logo" src="assets/img/whatsapp.png" alt="logo-whatsapp"></a>
+            </div>
+        </div>
+        <div class="footer__texto">
+            <p>Derechos reservados al diseñador y desarrollador.</p>
+        </div>
     </footer>
 </body>
 
