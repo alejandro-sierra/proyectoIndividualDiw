@@ -160,9 +160,11 @@ p{
     font-size: 15rem;
 }
 
-.header__contacto frame{
-    z-index: 5;
+.formulario input , textarea{
+    border: none;
 }
+
+
 
 .contacto{
     background-color: var(--blanco);
@@ -193,7 +195,7 @@ p{
 .redirecciones__enlaces{
     display: flex;
     justify-content: center;
-    gap: 30rem;
+    gap: 10rem;
 }
 
 .redirecciones__enlaces a{
@@ -224,18 +226,28 @@ table, tr, td{
 tr:nth-child(2n+1){
     background-color: var(--blanco);
 }
+
 tr:nth-child(2n){
     background-color: var(--gris);
 }
+
 tr:first-child{
     background-color: var(--naranja);
 }
 
 .whatsapp___fixed{
+    position: fixed;
+    margin-bottom: 15rem;
+    margin-right: 15rem;
+    right: 0;
+    bottom: 0;
     width: 60rem;
     height: 60rem;
-    position: fixed;
-    z-index: 3;
+    transition: 0.8s linear;
+}
+
+.whatsapp___fixed:hover{
+    transform: rotate(360deg);
 }
 
 
