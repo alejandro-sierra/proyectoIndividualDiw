@@ -34,31 +34,17 @@
 
     <main class="contacto">
         <form class="formulario">
-            <fieldset>
-                <legend>Envianos un mensaje</legend>
-                <div>
-                    <div class="campo">
-                        <input type="text" placeholder="Nombre" autofocus required pattern="[A-Za-z0-9]{3,30}">
-                    </div>
-                    <div class="campo">
-                        <input type="email" placeholder="Email" required>
-                    </div>
-                </div>
-                <!-- Quito el campo edad porque no cuadra con mi diseño -->
-                <div class="campo">
-                    <input type="tel" placeholder="Teléfono" required>
-                </div>
-                <div class="campo">
-                    <textarea name="mensaje" required placeholder="Escribe un mensaje" cols="30" rows="10"></textarea>
-                </div>
-                <div class="campo">
-                    <input id="checkbox" type="checkbox" required>
-                    <label for="checkbox">Acepto la política de privacookies.</label>
-                </div>
-                <div class="campo">
-                    <input type="submit" value="Enviar">
-                </div>
-            </fieldset>
+            <div class="formulario__bloque1">
+                <input class="campo" type="text" placeholder="Nombre" autofocus required pattern="[A-Za-z0-9]{3,30}">
+                <input class="campo" type="email" placeholder="Email" required>
+            </div>
+            <div lass="formulario__bloque2">
+                <input class="campo" type="tel" placeholder="Teléfono" required>
+                <textarea class="campo" name="mensaje" required placeholder="Escribe un mensaje" cols="30" rows="10"></textarea>
+                <input class="campo__checkbox" id="checkbox" type="checkbox" required>
+                <label for="checkbox">Acepto la política de privacookies.</label>
+                <input class="campo" type="submit" value="Enviar">
+            </div>
         </form>
     </main>
 
