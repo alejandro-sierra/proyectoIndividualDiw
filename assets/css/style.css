@@ -16,7 +16,6 @@
 * {
     padding: 0rem;
     margin: 0rem;
-    overflow-x:hidden
 }
 
 html{
@@ -58,7 +57,7 @@ p{
 
 .contenedor__centrado{
     max-width: 1500rem;
-    width: 93%;
+    width: 85%;
     margin: 0 auto;
     padding: 25rem;
 
