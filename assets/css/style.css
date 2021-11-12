@@ -121,13 +121,24 @@ p{
 
 @media (max-width: 768px) {
     .navegacion{
-        background-color: red;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: block;
+        text-align: center;
+        height: 200rem;
     }
+    
+    .height__fijo{
+        height: 200rem;
+    }
+    .navegacion__enlaces{
+        gap: 15rem;
+        
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 10rem;
+    }
+
+
 }
-  
 
 
 /* Inicio */
@@ -244,7 +255,15 @@ form textarea:focus{
 @media (max-width: 768px) {
     .btnEnviar input{
         width: 100%;
-    }    
+    }
+
+    .contacto h2{
+        text-align: center;
+    }
+
+    .formulario__bloque1{
+        display: block;
+        }
 }
   
 
@@ -359,4 +378,13 @@ footer{
 .redes-logo{
     width: 40rem;
     height: 40rem;
+}
+
+@media (max-width: 768px) {
+    footer{
+        height: 100rem;
+    }
+    .footer__texto {
+        margin-top: 50rem;
+    }
 }
