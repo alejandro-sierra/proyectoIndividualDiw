@@ -34,16 +34,20 @@
 
     <main class="contacto">
         <form class="formulario">
+            <h2>Envianos un mensaje</h2>
             <div class="formulario__bloque1">
                 <input class="campo" type="text" placeholder="Nombre" autofocus required pattern="[A-Za-z0-9]{3,30}">
                 <input class="campo" type="email" placeholder="Email" required>
             </div>
-            <div lass="formulario__bloque2">
-                <input class="campo" type="tel" placeholder="Teléfono" required>
-                <textarea class="campo" name="mensaje" required placeholder="Escribe un mensaje" cols="30" rows="10"></textarea>
-                <input class="campo__checkbox" id="checkbox" type="checkbox" required>
+
+            <input class="campo" type="tel" placeholder="Teléfono" required>
+            <textarea name="mensaje" required placeholder="Escribe un mensaje" cols="30" rows="10"></textarea>
+            <div class="bloqueChecbox">
+                <input id="checkbox" type="checkbox" required>
                 <label for="checkbox">Acepto la política de privacookies.</label>
-                <input class="campo" type="submit" value="Enviar">
+            </div>
+            <div class="btnEnviar">
+                <input type="submit" value="Enviar">
             </div>
         </form>
     </main>

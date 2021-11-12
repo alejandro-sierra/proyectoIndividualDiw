@@ -119,6 +119,16 @@ p{
     text-decoration: none;
 }
 
+@media (max-width: 768px) {
+    .navegacion{
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+  
+
 
 /* Inicio */
 .header__inicio {                                               
@@ -148,63 +158,95 @@ p{
 
 
 /* Contactos */
-/* .formulario fieldset{
-    border: none;
-    font-size: 15rem;
-}
-
-.formulario input , textarea{
-    border: none;
-    border-bottom: 1rem solid var(--gris);
-}
-
-.formulario{
-    display: flex;
-    justify-content: space-between;
-}
-
-
 .contacto{
-    width: 100%;
-    background-color: var(--blanco);
-    box-shadow: 0px 0px 23px 2px rgba(0,0,0,0.81);
-    display: flex;
-    justify-content: center;
-} */
-
-.contacto{
-    overflow: hidden; /*por si le ponemos floats*/
     background-color: var(--blanco);
     width: 100%;
 }
 
 form{
     max-width: 800rem;
-    margin: 0 auto;
-    background-color: red;
+    margin: 0 auto;  
+    background-color: var(--blanco);
+    padding: 15rem;
+}
+
+
+.formulario__bloque1{
+    display: flex;
+    justify-content: center;
 }
 
 .formulario__bloque1 .campo{
-    width: 50%;
-    float: left;
-    margin-bottom: 15rem;
-    margin-left: 5rem;
-}
-
-.formulario__bloque2 .campo{
-    margin-top: 15rem;
+    margin-right: 15rem;
 }
 
 .campo{
-    width: 100%;
+    width: 95%;
     border: none;
     border-bottom: 1rem solid var(--gris);
     height: 45rem;
+    margin: 15rem;
 }
 
-.campo__checkbox{
-    
+.campo:focus{
+    outline: none;
+    border-bottom: 1rem solid var(--naranja);
+    transition: 0.3s linear;
 }
+
+form label{
+    font-size: 15rem;
+}
+
+form textarea{
+    resize: none;
+    border: none;
+    border-bottom: 1rem solid var(--gris);
+    height: 150rem;
+    width: 95%;
+    margin: 15rem;
+    margin-bottom: 15rem;
+}
+
+form textarea:focus{
+    outline: none;
+    border-bottom: 1rem solid var(--naranja);
+    transition: 0.3s linear;
+}
+
+.bloqueChecbox input{
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 10rem;
+    margin: 15rem;
+}
+
+.bloqueChecbox label{
+    padding-left: 10rem;
+}
+
+.btnEnviar{
+    display: flex;
+    justify-content: center;
+}
+
+.btnEnviar input{
+    font-family: var(--funteParrafos);
+    color: var(--blanco);
+    background-color: var(--naranja);
+    text-transform: uppercase;
+    width: 150rem;
+    height: 50rem;
+    border-radius: 10rem;
+}
+
+
+@media (max-width: 768px) {
+    .btnEnviar input{
+        width: 100%;
+    }    
+}
+  
 
 /* Blog */
 .header__blog{
