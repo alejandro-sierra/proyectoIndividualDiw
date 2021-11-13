@@ -53,6 +53,14 @@ p{
     line-height: 18rem;
 }
 
+a{
+    font-size: 15rem;
+}
+
+img:not([alt]){
+    border: 3px solid red;
+}
+
 /* Utilidades */
 
 .contenedor__centrado{
@@ -337,6 +345,19 @@ th{
     width: 100%;
     background: rgb(234,62,16);
     background: linear-gradient(90deg, rgba(234,62,16,1) 0%, rgba(50,52,55,1) 100%); 
+}
+
+.pdf::after{ /*No he consegido poner el icono del pdf*/
+    height: 15rem;
+    width: 15rem;
+    background-image: url(../img/icon_pdf.png);
+}
+
+.scroll{
+    background-color: var(--grisClaro);
+    width: 100%;
+    height: 150rem;
+    overflow: scroll;
 }
 
 .whatsapp___fixed{
