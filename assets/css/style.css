@@ -120,8 +120,8 @@ p{
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
-    .navegacion{
+@media screen and (max-width: 768px) {
+    /* .navegacion{
         display: block;
         text-align: center;
         height: 200rem;
@@ -136,7 +136,7 @@ p{
         flex-direction: column;
         margin: 0 auto;
         margin-top: 10rem;
-    }
+    } */
 
 
 }
@@ -253,7 +253,7 @@ form textarea:focus{
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .btnEnviar input{
         width: 100%;
     }
@@ -328,6 +328,17 @@ tr:first-child{
     background-color: var(--naranja);
 }
 
+th{
+    text-shadow: 4px 2px 2px #000000;
+}
+
+.gradiente{
+    height: 100rem;
+    width: 100%;
+    background: rgb(234,62,16);
+    background: linear-gradient(90deg, rgba(234,62,16,1) 0%, rgba(50,52,55,1) 100%); 
+}
+
 .whatsapp___fixed{
     position: fixed;
     margin-bottom: 15rem;
@@ -343,7 +354,7 @@ tr:first-child{
     transform: rotate(360deg);
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .whatsapp___fixed{
         display: none;
     }
@@ -387,7 +398,7 @@ footer{
     height: 40rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     footer{
         height: 100rem;
     }

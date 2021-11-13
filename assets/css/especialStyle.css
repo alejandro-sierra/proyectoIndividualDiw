@@ -1,6 +1,10 @@
 @media print {
     header, footer, nav, aside {
         display: none; 
-    } 
+    }
+
+    .whatsapp___fixed{
+        display: none;
+    }
 
 }
