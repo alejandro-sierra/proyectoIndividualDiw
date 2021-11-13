@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
 
+@font-face {
+    font-family: 'Yuji Boku'; 
+    src: local('Yuji Boku'), 
+        url(../fuentes/yujiboku.eot) format('embedded-opentype'),
+        url(../fuentes/yujiboku.svg) format('svg'),
+        url(../fuentes/yujiboku.ttf) format('truetype'), 
+        url(../fuentes/yujiboku.woff) format('woff');
+}
+
 :root{
     --rojoOscuro: #af161e;
     --rojo: #c8091b;
@@ -10,6 +19,7 @@
     --blanco: #FFFFFF;
     --fuenteTitulos: 'Roboto Slab', sans-serif;
     --funteParrafos: 'Roboto', sans-serif;
+    --fuenteImportada: 'Yuji Boku';
 }
 
 /* Globales */
@@ -129,7 +139,7 @@ img:not([alt]){
 }
 
 @media screen and (max-width: 768px) {
-    /* .navegacion{
+    .navegacion{
         display: block;
         text-align: center;
         height: 200rem;
@@ -144,7 +154,7 @@ img:not([alt]){
         flex-direction: column;
         margin: 0 auto;
         margin-top: 10rem;
-    } */
+    }
 
 
 }
@@ -373,6 +383,10 @@ th{
 
 .whatsapp___fixed:hover{
     transform: rotate(360deg);
+}
+
+.body__blog h2 {
+    font-family: var(--fuenteImportada);
 }
 
 @media screen and (max-width: 768px) {
