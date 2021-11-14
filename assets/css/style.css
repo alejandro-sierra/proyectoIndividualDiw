@@ -137,6 +137,10 @@ img:not([alt]){
     text-decoration: none;
 }
 
+.icon__hamburger{
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .navegacion{
         display: block;
@@ -147,6 +151,7 @@ img:not([alt]){
     .height__fijo{
         height: 200rem;
     }
+
     .navegacion__enlaces{
         gap: 15rem;
         
@@ -155,7 +160,44 @@ img:not([alt]){
         margin-top: 10rem;
     }
 
+    /* .logo{ Este código es para el menu hamburgesa, pero de momento solo me muesta el logo
+        margin-left: 20rem;
+        margin-bottom: 15rem;
+    }
 
+    input[type="checkbox"], .navegacion__enlaces{
+        display: none;
+    }
+
+    .icon__hamburger{
+        display: block;
+    }
+
+    .navegacion label{
+        display:flex;
+        flex-direction:column;
+        width:50rem;
+        cursor:pointer;
+        margin-right: 20rem;
+
+    }
+
+    .icon__hamburger span{
+        background-color: black;
+        border-radius:10px;
+        height:5rem;
+        margin-right: 30rem;
+        margin: 5rem 0;
+        width: 100%;
+    }
+
+    input[type="checkbox"]:checked ~ span{
+        background-color: red;
+    }
+
+    input[type="checkbox"]:checked .navegacion__enlaces{
+        display: block;
+    } */
 }
 
 
