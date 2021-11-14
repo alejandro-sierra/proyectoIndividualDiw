@@ -74,7 +74,7 @@ img:not([alt]){
 /* Utilidades */
 
 .contenedor__centrado{
-    max-width: 1500rem;
+    max-width: 2000rem;
     width: 85%;
     margin: 0 auto;
     padding: 25rem;
@@ -87,7 +87,6 @@ img:not([alt]){
     margin-top: -70rem;
     border-top-left-radius:  5rem;
     border-top-right-radius:  5rem;
-    /* box-shadow: 0px 0px 23px 2px rgba(0,0,0,0.81); */
     box-shadow: 0px 10px 15px 2px rgba(0,0,0,0.81);
 }
 
@@ -180,12 +179,77 @@ img:not([alt]){
 /** Servicios **/
 .servicios__titulo{
     text-align: center;
-    
+    margin-bottom: 15rem;
+}
+
+.servicios{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    align-items: center;
+    margin-bottom: 50rem;
+}
+
+section p{
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .servicios{
+        display: block;
+    }
+}
+
+section img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15rem;
+    height: 50rem;
+    width: 50rem;
+}
+
+/** Imagen Fija **/
+.inicio__img_fija{
+    background-image: url("../img/screwdrivers_red_out_focus.webp");
+    height: 400rem; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.inicio__img_fija{
+    color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+    text-align: center;
 }
 
 
 /* Proyectos */
+table{
+    width: 100%;
+}
 
+.header__proyecto{
+    background-color: var(--rojo);
+    width: 100%;
+    background-size: cover;
+    height: 450rem; 
+}
+
+.header__texto__proyecto{
+    height: 220rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanco);
+    font-weight: 300;
+}
 
 /* Contactos */
 .contacto{
@@ -296,7 +360,7 @@ form textarea:focus{
 
 .header__texto__blog{
     display: flex;
-    height: 200rem;
+    height: 220rem;
     justify-content: center;
     align-items: center;
     color: var(--blanco);
@@ -384,6 +448,28 @@ th{
 .whatsapp___fixed:hover{
     transform: rotate(360deg);
 }
+
+/* .fa-whatsapp{ No consigo que funcione
+    color: green;
+    width: 60rem;
+    height: 60rem;
+    font-size: 5rem;
+} 
+
+.btn__fijo{
+    display: block;
+    position: fixed;
+    margin-bottom: 15rem;
+    margin-right: 15rem;
+    right: 0;
+    bottom: 0;
+    transition: 0.8s linear;
+}
+
+.btn__fijo:hover{
+    transform: rotate(360deg);
+}*/
+
 
 .body__blog h2 {
     font-family: var(--fuenteImportada);
