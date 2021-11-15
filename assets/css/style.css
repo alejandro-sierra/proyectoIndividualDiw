@@ -160,7 +160,8 @@ img:not([alt]){
         margin-top: 10rem;
     }
 
-    /* .logo{ Este código es para el menu hamburgesa, pero de momento solo me muesta el logo
+    /* Esto es para el menú hamburgesa */
+    /* .logo{
         margin-left: 20rem;
         margin-bottom: 15rem;
     }
@@ -191,14 +192,14 @@ img:not([alt]){
         width: 100%;
     }
 
-    input[type="checkbox"]:checked ~ span{
+    input[type="checkbox"]:checked .navegacion__enlaces{
         background-color: red;
     }
 
-    input[type="checkbox"]:checked .navegacion__enlaces{
+    input[type="checkbox"]:checked + .navegacion__enlaces{
         display: block;
-    } */
-}
+    }*/
+} 
 
 
 /* Inicio */
