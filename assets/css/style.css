@@ -137,43 +137,40 @@ img:not([alt]){
     text-decoration: none;
 }
 
-.icon__hamburger{
+.navegacion input[type="checkbox"], .icon__hamburger{
     display: none;
 }
 
 @media screen and (max-width: 768px) {
-    .navegacion{
-        display: block;
-        text-align: center;
-        height: 200rem;
-    }
-    
-    .height__fijo{
-        height: 200rem;
-    }
-
     .navegacion__enlaces{
+        background-color: var(--blanco);
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 100%;
         gap: 15rem;
         
         flex-direction: column;
         margin: 0 auto;
-        margin-top: 10rem;
+    }
+
+    .navegacion__enlace{
+        padding: 10rem;
+        border-bottom: 2rem solid var(--negro);
+        text-transform: uppercase;
     }
 
     /* Esto es para el menú hamburgesa */
-    /* .logo{
+    .logo{
         margin-left: 20rem;
         margin-bottom: 15rem;
     }
-
-    input[type="checkbox"], .navegacion__enlaces{
+    
+    input[type="checkbox"]:checked ~ .navegacion__enlaces{
         display: none;
     }
 
-    .icon__hamburger{
-        display: block;
-    }
-
+    /* Dibujo Hamburgesa */
     .navegacion label{
         display:flex;
         flex-direction:column;
@@ -192,13 +189,6 @@ img:not([alt]){
         width: 100%;
     }
 
-    input[type="checkbox"]:checked .navegacion__enlaces{
-        background-color: red;
-    }
-
-    input[type="checkbox"]:checked + .navegacion__enlaces{
-        display: block;
-    }*/
 } 
 
 
