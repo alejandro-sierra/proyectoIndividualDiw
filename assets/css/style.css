@@ -560,3 +560,30 @@ footer{
         margin-top: 50rem;
     }
 }
+
+/* VIDEO TEMA 06 */
+.contenedorVideo{
+    width: 50%;
+    margin: 20rem auto;
+}
+
+.navVideo{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.navVideo input{
+    width: 80rem;
+    height: 40rem;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 20%;
+    border: none;
+    background-color: var(--naranja);
+
+}
+
+.navVideo input:hover{
+    color: black;
+}
