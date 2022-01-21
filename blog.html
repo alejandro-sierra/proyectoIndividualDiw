@@ -172,7 +172,7 @@
                 </audio>
             </article>
             <article>
-                <h2>Video con Controles Propios :)</h2>
+                <h2>Control de vídeo :)</h2>
                 <video id="medio" width="100%" height="400">
                     <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">
                     <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv">
@@ -191,8 +191,36 @@
                     </nav>
                 </div>
             </article>
+            <article>
+                <h2>Control de audio</h2>
+                <audio id="nature">
+                    <source src="/assets/song/nature.mp3" type='audio/mpeg; codecs="mp3"'>
+                    <source src="/assets/song/nature.ogg" type='audio/ogg; codecs="vorbis"'>
+                </audio>
+                <audio id="lluvia">
+                    <source src="/assets/song/lluvia.mp3" type='audio/mpeg; codecs="mp3"'>
+                    <source src="/assets/song/lluvia.ogg" type='audio/ogg; codecs="vorbis"'>
+                </audio>
+                <audio id="mar">
+                    <source src="/assets/song/mar.mp3" type='audio/mpeg; codecs="mp3"'>
+                    <source src="/assets/song/mar.ogg" type='audio/ogg; codecs="vorbis"'>
+                </audio>
+                <audio id="maullido">
+                    <source src="/assets/song/maullido.mp3" type='audio/mpeg; codecs="mp3"'>
+                    <source src="/assets/song/maullido.ogg" type='audio/ogg; codecs="vorbis"'>
+                </audio>
+
+                <div class="contenedorAudio">
+                    <nav class="navAudio">
+                        <input type="button" id="boton1" value="Nuture">
+                        <input type="button" id="boton2" value="Lluvia">
+                        <input type="button" id="boton3" value="Mar">
+                        <input type="button" id="boton4" value="Maullido">
+                    </nav>
+                </div>
+            </article>
         </section>
-        <a class="redirecciones__enlaces" href="#tabla">Primer Articulo</a>
+        <a class="redirecciones__enlaces enlace__primer__articulo" href="#tabla">Primer Articulo</a>
     </main>
     <a href="https://wa.me/34123456789" target="_blank">
         <img class="whatsapp___fixed" src="assets/img/whatsapp_fixed.png" alt="Whatsapp Fixed">
@@ -220,7 +248,8 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/video.js"></script>
+    <script src="./assets/js/audio.js"></script>
 </body>
 
 </html>

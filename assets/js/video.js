@@ -44,7 +44,7 @@ function accionMasVolumen()
 }
 function accionMenosVolumen()
 {
-    if (medio.volume > 0) {
+    if (medio.volume > 0.1) {
         medio.volume -= 0.1
     }
 }

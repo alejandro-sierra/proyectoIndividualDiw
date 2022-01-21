@@ -482,28 +482,6 @@ th{
     transform: rotate(360deg);
 }
 
-/* .fa-whatsapp{ No consigo que funcione
-    color: green;
-    width: 60rem;
-    height: 60rem;
-    font-size: 5rem;
-} 
-
-.btn__fijo{
-    display: block;
-    position: fixed;
-    margin-bottom: 15rem;
-    margin-right: 15rem;
-    right: 0;
-    bottom: 0;
-    transition: 0.8s linear;
-}
-
-.btn__fijo:hover{
-    transform: rotate(360deg);
-}*/
-
-
 .body__blog h2 {
     font-family: var(--fuenteImportada);
 }
@@ -511,6 +489,57 @@ th{
 @media screen and (max-width: 768px) {
     .whatsapp___fixed{
         display: none;
+    }
+}
+
+.enlace__primer__articulo{
+    margin-top: 25rem;
+}
+
+/**** TEMA 06 ****/
+.contenedorVideo{
+    width: 50%;
+    margin: 20rem auto;
+}
+
+.navVideo{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section input{
+    font-family: var(--funteParrafos);
+    color: var(--blanco);
+    background-color: var(--naranja);
+    text-transform: uppercase;
+    width: 150rem;
+    height: 50rem;
+    border-radius: 10rem;
+    
+}
+
+section input:hover{
+    color: black;
+}
+
+@media screen and (max-width: 1300px) {
+    .contenedorVideo{
+        width: 100%;
+    }
+}
+
+/* Animación */
+.header__texto__blog h2{
+    animation-duration: 4s;
+    animation-name: animacionGuapa;
+}
+
+@keyframes animacionGuapa{
+    from{
+        margin-bottom: 100%;
+    }
+    to{
+        margin: 0%;
     }
 }
 
@@ -561,29 +590,5 @@ footer{
     }
 }
 
-/* VIDEO TEMA 06 */
-.contenedorVideo{
-    width: 50%;
-    margin: 20rem auto;
-}
 
-.navVideo{
-    display: flex;
-    justify-content: space-evenly;
 
-}
-
-.navVideo input{
-    width: 80rem;
-    height: 40rem;
-    text-transform: uppercase;
-    color: white;
-    border-radius: 20%;
-    border: none;
-    background-color: var(--naranja);
-
-}
-
-.navVideo input:hover{
-    color: black;
-}
