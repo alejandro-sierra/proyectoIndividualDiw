@@ -470,8 +470,8 @@ th{
 .whatsapp___fixed{
     position: fixed;
     margin-bottom: 15rem;
-    margin-right: 15rem;
-    right: 0;
+    margin-left: 15rem;
+    left: 0;
     bottom: 0;
     width: 60rem;
     height: 60rem;
@@ -494,6 +494,17 @@ th{
 
 .enlace__primer__articulo{
     margin-top: 25rem;
+}
+
+.flechaArriba{
+	display: none;
+	position: fixed;
+    margin-bottom: 15rem;
+    margin-right: 15rem;
+    right: 0;
+    bottom: 0;
+    font-size: 60rem;
+    color: var(--naranja);
 }
 
 /**** TEMA 06 ****/
