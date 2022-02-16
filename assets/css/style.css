@@ -153,11 +153,12 @@ img:not([alt]){
         flex-direction: column;
         margin: 0 auto;
     }
-
+    
     .navegacion__enlace{
         padding: 10rem;
         border-bottom: 2rem solid var(--negro);
         text-transform: uppercase;
+        display: block;
     }
 
     /* Esto es para el menú hamburgesa */
